@@ -1,15 +1,92 @@
-header{
-    background-color: darkkhaki;
+/* Paleta de colores */
+:root {
+    --dark-red: #350a06;
+    --deep-red: #56070c;
+    --rust-red: #8f3d38;
+    --light-gray: #e1d9d9;
+    --off-white: #f6f1f1;
 }
 
-main{
-    background-color: thistle;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--off-white);
+    color: var(--dark-red);
 }
 
-footer{
-    background-color: rgb(209, 71, 71);
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: var(--deep-red);
+    color: var(--off-white);
 }
 
-.contenedor{
-    background-color: #b9abac;
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: end;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+.main {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+.master {
+    background: url('img/background_enotech_banner.jpg') no-repeat center center/cover;
+    color: var(--dark-red);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.logo{
+    max-width: 180px;
+    max-height: 100px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--rust-red);
+    color: var(--light-gray);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    header, .master, .content {
+        text-align: center;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
