@@ -1,15 +1,28 @@
-header{
+body {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 3fr 1fr ;
+    grid-template-areas: "header  " "main " "footer ";
+
+}
+
+
+header {
     background-color: darkkhaki;
+    grid-area: header;
+
 }
 
-main{
+main {
     background-color: thistle;
+    grid-area: main;
 }
 
-footer{
+footer {
     background-color: rgb(209, 71, 71);
+    grid-area: footer;
 }
 
-.contenedor{
+.contenedor {
     background-color: #b9abac;
 }
