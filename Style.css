@@ -66,6 +66,10 @@ nav ul li a {
     text-align: center;
 }
 
+.contenedor {
+    text-align: justify;
+}
+
 footer {
     background-color: var(--rust-red);
     color: var(--light-gray);
