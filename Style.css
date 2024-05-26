@@ -61,6 +61,7 @@ nav ul li a {
     background: url('img/background_enotech_banner.jpg') no-repeat center center/cover;
     color: var(--dark-red);
     text-align: left;
+    font-size: xx-large;
     padding: 50px 20px;
     
 }
