@@ -129,4 +129,23 @@ footer {
  
 }
 
+li{
+    display: flex;
+    justify-content: space-around;  
+    padding: 10px;
+    border-radius: 10px;
+    transition:  transform 0.2s ease-in-out;
+
+  
+}
+
+li:hover {
+    
+    background-color:#e21a10 ;
+    border: var(--light-gray) 1px solid;
+    transform: scale(1.2);  
+    box-shadow: 0 0 20px #f8645d;;
+    
+}
+
 
