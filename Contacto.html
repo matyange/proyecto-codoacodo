@@ -7,69 +7,54 @@
     <link rel="stylesheet" href="style.css"> <!--este es el enlace a la pagina que da los estilos del sitio -->
     <title>EnoTech Solutions</title>
 </head>
+<!-- //////////////////////////////////////////////////////////// -->
+
 
 <body>
     <!--El body esta estructurado con el header, el main y el footer -->
     <header class="header">
-        <img src="img/Logo_enotech_H.png" alt="EnoTech Solutions Logo" class="logo">
+        
+        <a href="index.html">
+            <img src="img/Logo_enotech_H.png" alt="EnoTech Solutions Logo" class="logo">
+        </a>
+
         <nav class="nav"> <!--Esta es la barra de navegacion que te mantiene en todas paginas -->
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="Productos.html">Productos</a></li>
                 <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Productos.html">Productos</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
 
+
     <main class="main">
+
         <section class="master">
             <h1>Bienvenido a EnoTech Solutions</h1>
             <p>Optimizando los procesos vitivinícolas para un futuro sostenible</p>
         </section>
-        <!-- <h1>EnoTech Solutions</h1> -->
+
         <section class="content">
 
-            <main>
-
+            
                 <div class="contenedor">
-
-
-                  <!--  <div>
-
-                        <p>
-                            formulario <br>
-
-                            nombre <br>
-                            apellido <br>
-                            empresa o institucion <br>
-                            DNI <br>
-                            area (menu desplegable) <br>
-                            ...........ventas <br>
-                            ...........soporte tecnico <br>
-                            ...........laboratorio <br>
-                            ........... suministros <br>
-                            telefono <br>
-                            email <br>
-                            acepto recibir notificaciones (checkbox) (sin validar) <br>
-                            terminos y condiciones (checkbox) <br>
-                        </p>
-
-                    </div> -->
-
                     <form>
                         <label for="Nombre">Nombre:</label>
                         <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" required>
                         <br>
-                     
+
                         <label for="Apellido">Apellido:</label>
                         <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su Apellido" required>
                         <br>
-                     
+
                         <label for="empresa">Empresa o institucion:</label>
-                        <input type="text" id="empresa" name="empresa" placeholder="Empresa o institucion a la que pertenece" required>
+                        <input type="text" id="empresa" name="empresa"
+                            placeholder="Empresa o institucion a la que pertenece" required>
                         <br>
-                     
+
                         <label for="DNI">DNI:</label>
                         <input type="number" id="DNI" name="DNI" placeholder="Ingrese su DNI" required>
                         <br>
@@ -84,37 +69,39 @@
                         <label for="telefono">telefono:</label>
                         <input type="number" id="telefono" name="telefono" placeholder="Ingrese su telefono" required>
                         <br>
-                     
+
                         <label for="email">email:</label>
                         <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
                         <br>
-                     
-                        
+
+
                         <input type="checkbox" id="suscripcion" name="suscripcion">
                         <label for="suscripcion">Deseo recibir notificaciones en mi correo</label>
                         <br>
 
-                        
+
                         <input type="checkbox" id="condiciones" name="condiciones" required>
                         <label for="condiciones">acepto las condiciones</label>
                         <br>
 
-                        <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje..." rows="10" cols="50"></textarea>
+                        <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje..." rows="10"
+                            cols="50"></textarea>
                         <br>
-                     
-                        
+
+
                         <input type="submit" id="submit" name="submit">
                         <br>
-                       
-                       
-                        
+
+
+
                     </form>
 
                 </div>
 
-            </main>
         </section>
-        <footer class="footer"> <!--El footer tambien se mantien en todas las paginas del sitio -->
+    </main>
+
+        <footer class="footer"> 
             <p>&copy; 2024 EnoTech Solutions. Todos los derechos reservados.</p>
         </footer>
 
@@ -122,7 +109,7 @@
 
 
         <script src="Script.js"></script>
-        <!--Este es el enlace al script de javascript, se coloca al final del body-->
+       
 
 
 </body>
