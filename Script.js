@@ -10,7 +10,7 @@ window.onload = getCatalog();
 
                 let agregar = document.createElement("div");
                 agregar.innerHTML = `
-                <div class = catalogo-info>
+                <div class=catalogo-info>
                 <h3>
                 ${getAll[i].nombre}
                 </h3>
@@ -21,6 +21,7 @@ window.onload = getCatalog();
                 `
                 container.appendChild(agregar);
             }
+            console.log(getAll);
         })
 }
 

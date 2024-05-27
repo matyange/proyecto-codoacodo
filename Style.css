@@ -56,6 +56,7 @@ nav ul li a {
     color: var(--dark-red);
     text-align: center;
     padding: 50px 20px;
+
 }
 
 .logo {
@@ -228,16 +229,46 @@ nav ul li a {
     text-align: justify;
 }
 
+/***************PAGINA PRODUCTOS**************************************************************/
 
-/* #catalogo {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    background-color: aqua;
+.container-prod {
+    gap: 20px;
+    width: 100%;
 }
 
-#catalogo>button {
-    width: 150px;
+.content_prod {
+    display: grid;
+    grid-template-rows: 1/2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "articleIndexProduct"
+        "catalogo";
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+}
+
+.article-index-product {
+    width: 90vw;
+    grid-area: articleIndexProduct;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#catalogo {
+    width: 90vw;
+    grid-area: catalogo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#catalogo>h2 {
+    display: inline;
+    width: 100%;
 }
 
 .catalogo-info {
@@ -247,12 +278,14 @@ nav ul li a {
     border: 1px solid black;
     border-radius: 50px;
     align-items: center;
+    justify-content: space-around;
+
 }
 
 .catalogo-info>img {
-    width: 75px;
+    height: 150px;
 
-} */
+}
 
 
 
