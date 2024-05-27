@@ -279,6 +279,9 @@ nav ul li a {
     border-radius: 50px;
     align-items: center;
     justify-content: space-around;
+    background: #e0e0e0;
+    box-shadow: -25px 25px 50px #bebebe,
+        25px -25px 50px #ffffff;
 
 }
 
