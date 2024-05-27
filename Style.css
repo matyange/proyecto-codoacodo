@@ -16,7 +16,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:100px 7fr 200px ;
-    grid-template-areas: 
+    grid-template-areas:
     'header'
     'main'
     'footer'
@@ -63,7 +63,7 @@ nav ul li a {
     text-align: left;
     font-size: xx-large;
     padding: 50px 20px;
-    
+
 }
 
 .logo{
@@ -100,52 +100,89 @@ footer {
     header {
         flex-wrap: wrap;
         justify-content:center;
-             
-    }
-    
-    body {    
-    
-    grid-template-rows:1fr auto 1fr ;
-           
-    
+
     }
 
-  
+    body {
+
+    grid-template-rows:1fr auto 1fr ;
+
+
+    }
+
+
 }
 
 @media (max-width: 480px) {
     header nav ul li {
-        
+
         margin: 10px 0;
     }
       ul{
-        
+
         flex-direction: column;
     }
     .header{
         flex-direction: column;
     }
 
- 
+
 }
 
 li{
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     padding: 10px;
     border-radius: 10px;
     transition:  transform 0.2s ease-in-out;
 
-  
+
+
 }
 
 li:hover {
-    
+
     background-color:#e21a10 ;
     border: var(--light-gray) 1px solid;
-    transform: scale(1.2);  
+    transform: scale(1.2);
     box-shadow: 0 0 20px #f8645d;;
-    
+
 }
+
+/* ////////////Estilos de consulta de API/////////// */
+#catalogo {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#catalogo>h2 {
+    display: inline;
+    width: 100%;
+}
+
+.catalogo-info {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-around;
+    background: #e0e0e0;
+    box-shadow: -25px 25px 50px #bebebe,
+        25px -25px 50px #ffffff;
+
+}
+
+.catalogo-info>img {
+    height: 150px;
+
+}
+
+
 
 
