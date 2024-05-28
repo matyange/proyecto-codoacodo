@@ -254,6 +254,12 @@ nav ul li a {
     grid-area: articleIndexProduct;
     text-align: justify;
     margin-bottom: 20px;
+    margin: auto;
+}
+
+.article-index-product>div {
+    width: 70vw;
+    margin: auto;
 }
 
 #catalogo {
@@ -264,6 +270,7 @@ nav ul li a {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
+    margin: auto;
 }
 
 #catalogo>h2 {
@@ -283,6 +290,7 @@ nav ul li a {
     box-shadow: -25px 25px 50px #bebebe,
         25px -25px 50px #ffffff;
 
+
 }
 
 .catalogo-info>img {
@@ -290,6 +298,34 @@ nav ul li a {
 
 }
 
+.content-nosotros {
+    display: grid;
+    grid-template-rows: 1/2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "nosotros"
+        "experiencia";
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+}
+
+
+.article-nosotros {
+    width: 70vw;
+    grid-area: nosotros;
+    text-align: justify;
+    margin: auto;
+}
+
+
+.article-experiencia {
+    width: 70vw;
+    grid-area: experiencia;
+    text-align: justify;
+    margin: auto;
+}
 
 
 
