@@ -1,7 +1,9 @@
 
+
+
 var container = document.querySelector("#catalogo");
 window.onload = getCatalog();
- function getCatalog() {
+function getCatalog() {
     fetch('https://api.sampleapis.com/wines/reds')
         .then(res => res.json())
         .then(res => {
@@ -53,3 +55,60 @@ class winnery {
         this.location = loca;
     }
 }
+
+//// VALIDACIÓN///////////////////////////////
+
+
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+
+    const nombre = document.getElementById('Nombre').value.trim();
+    const apellido = document.getElementById('Apellido').value.trim();
+    const empresa = document.getElementById('empresa').value.trim();
+    const dni = document.getElementById('DNI').value.trim();
+    const area = document.getElementById('Area').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const condiciones = document.getElementById('condiciones').checked;
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+
+
+    if (nombre === '' || apellido === '' || empresa === '' || dni === '' || area === '' || telefono === '' || email === ''|| mensaje === '') {
+        event.preventDefault();
+        alert('Todos los campos marcados con asterisco son obligatorios.');
+        return;
+    }
+
+
+    if (!condiciones) {
+        event.preventDefault();
+        alert('Debe aceptar las condiciones.');
+        return;
+    }
+
+    const valEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!valEmail.test(email)) {
+        event.preventDefault();
+        alert('Por favor, ingrese un correo electrónico válido.');
+        return;
+    }
+
+
+    const valTelefono = /^\d+$/;
+    if (!valTelefono.test(telefono)) {
+        event.preventDefault();
+        alert('Por favor, ingrese un número de teléfono válido.');
+        return;
+    }
+    else{
+        alert(nombre +' '+ apellido +','+' el formulario fué enviado exitosamente, pronto nos pondremos en contacto con usted')
+    }
+});
+
+
+
+
+
+
+
+
