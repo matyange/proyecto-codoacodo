@@ -4,78 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css"> <!--este es el enlace a la pagina que da los estilos del sitio -->
+    <link rel="stylesheet" href="style.css"> <!-- enlace a la página de estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="image/x-icon">
     <title>EnoTech Solutions</title>
 </head>
 
 <body>
-    <!--El body esta estructurado con el header, el main y el footer -->
-    <header>
-
-        <div class="logo">
-            <img src="logo.png" alt="EnoTech Logo">
-        </div>
-        
-        <h1>Optimizando los procesos vitivinícolas para un futuro sostenible</h1>
-
-        <nav>    <!--Esta es la barra de navegacion que te mantiene en todas paginas -->
-
+    <header class="header">
+        <a href="index.html">
+            <img src="img/Logo_enotech_H.png" alt="EnoTech Solutions Logo" class="logo">
+        </a>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="Productos.html">Productos</a></li>
                 <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Productos.html">Productos</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
-           
         </nav>
-
     </header>
 
-    
-    <main>
+    <main class="main">
+        <section class="master">
+            <h1 class="animate__animated animate__fadeInDown">Contacto</h1>
+            <p class="animate__animated animate__fadeInDown"><i>"Es hora de aumentar y optimizar su producción"</i></p>
+        </section>
 
-        <div class="contenedor">
+        <section class="content">
+            <div class="contenedor">
+                <form id ="contactForm">
+                    <fieldset>
+                        <legend>Información de Contacto</legend>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" required>
+                        <br>
 
-            <div>
+                        <label for="Apellido">Apellido:</label>
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su apellido" required>
+                        <br>
 
-                <p>
-                    formulario <br>
-                    
-                    nombre <br>
-                    apellido <br>
-                    empresa o institucion <br>
-                    DNI <br>
-                    area (menu desplegable) <br>
-                    ...........ventas <br>
-                    ...........soporte tecnico <br>
-                    ...........laboratorio <br>
-                    ........... suministros <br>
-                    telefono  <br>
-                    email  <br>
-                    acepto recibir notificaciones (checkbox) (sin validar) <br>
-                    terminos y condiciones (checkbox)  <br>
-                    </p>
+                        <label for="empresa">Empresa o institución:</label>
+                        <input type="text" id="empresa" name="empresa" placeholder="Empresa o institución a la que pertenece" required>
+                        <br>
 
+                        <label for="DNI">DNI:</label>
+                        <input type="number" id="DNI" name="DNI" placeholder="Ingrese su DNI" required>
+                        <br>
+
+                        <label for="Area">Seleccione el área que desea contactar:</label>
+                        <select name="Area" id="Area">
+                            <option value="Ventas" id="Ventas">Ventas</option>
+                            <option value="Soporte" id="Soporte">Soporte técnico</option>
+                            <option value="laboratorio" id="laboratorio">Laboratorio</option>
+                            <option value="Suministros" id="Suministros">Suministros</option>
+                        </select>
+                        <br>
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required>
+                        <br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                        <br>
+
+                        <input type="checkbox" id="suscripcion" name="suscripcion">
+                        <label for="suscripcion">Deseo recibir notificaciones en mi correo</label>
+                        <br>
+
+                        <input type="checkbox" id="condiciones" name="condiciones" required>
+                        <label for="condiciones">Acepto las condiciones</label>
+                        <br>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje..." rows="10" cols="50"></textarea>
+                        <br>
+
+                        <input type="submit" id="submit" name="submit" value="Enviar">
+                    </fieldset>
+                </form>
             </div>
-
-
-        </div>
-
+        </section>
     </main>
 
-    
-    <footer>     <!--El footer tambien se mantien en todas las paginas del sitio -->
-
-        <div>
-            Derechos de autor &copy; 2024 - Nombre de la Empresa
-        </div>
-
+    <footer class="footer">
+        <p>&copy; 2024 EnoTech Solutions. Todos los derechos reservados.</p>
     </footer>
 
-
-
-    <script src="Script.js"></script>      <!--Este es el enlace al script de javascript, se coloca al final del body-->
-
-    
+    <script src="Script.js" defer></script>
 </body>
+
 </html>
