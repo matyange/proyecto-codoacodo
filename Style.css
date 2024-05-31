@@ -77,6 +77,10 @@ nav ul li a {
     max-height: 100px;
 }
 
+#logo_movil{
+    display: none;
+}
+
 .content {
   
     padding: 50px;
@@ -118,6 +122,14 @@ footer {
         padding: 0px;
         
     }
+    #logo_movil{
+        display: block;
+    }
+
+    #logo_default{
+        display: none;
+    }
+
 
 }
 
