@@ -59,6 +59,7 @@ class winnery {
 //// VALIDACIÓN///////////////////////////////
 
 
+
     document.getElementById('formulario').addEventListener('submit', function(event) {
 
     const nombre = document.getElementById('Nombre').value.trim();
@@ -104,9 +105,6 @@ class winnery {
         alert(nombre +' '+ apellido +','+' el formulario fué enviado exitosamente, pronto nos pondremos en contacto con usted')
     }
 });
-
-
-
 
 
 
