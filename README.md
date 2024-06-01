@@ -21,8 +21,8 @@
 
 # Integrantes: 
 
-## [Luis Bada](https://github.com/matyange) 
+## [Luis Bada](https://github.com/luisbada) 
 ## [Melisa Latorre](https://github.com/melisa-latorre)
-## [Matias Angeli](https://github.com/luisbada)
+## [Matias Angeli](https://github.com/matyange)
 ## [Emanuel Ramirez](https://github.com/EmaRamirez)
 
